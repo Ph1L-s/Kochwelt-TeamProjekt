@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Raleway;
+}
+/*Header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 160px;
+    padding-right:  160px;
+    padding-top: 32px;
+    width: 100%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+.navbar {
+    position: absolute;
+    right: 160px;
+    top: 93px;
+}
+.navbar a {
+    text-decoration: none;
+    color: black;
+    padding-right: 24px;
+    font-size: 24px;
+    font-weight: 500;
+}
+.navbar a#nopadding {
+    padding: 0;
+}
+.navbar a:hover {
+    color: green;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px
+}
+.Kochwelt_icon {
+    
+}
+.Kochwelt_icon img {
+    height: 95px; 
+}
