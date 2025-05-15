@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
     <title>Kochwelt</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
@@ -14,16 +14,18 @@
   </head>
   <body>
     <header>
-      <div class="Kochwelt_icon">
-        <a href="./index.html">
-          <img src="./img/logo.png" alt="Startseite" />
-        </a>
-      </div>
-      <div class="navbar">
-        <a href="#">Start</a>
-        <a href="#">Rezept des Tages</a>
-        <a href="#">Kontakt</a>
-        <a id="nopadding" href="./impressum.html">Impressum</a>
+      <div class="header">
+        <div class="Kochwelt_icon">
+          <a href="./index.html">
+            <img src="./img/logo.png" alt="Startseite" />
+          </a>
+        </div>
+        <div class="navbar">
+          <a href="#">Start</a>
+          <a href="#">Rezept des Tages</a>
+          <a href="#">Kontakt</a>
+          <a id="nopadding" href="./impressum.html">Impressum</a>
+        </div>
       </div>
     </header>
     <main>
@@ -34,15 +36,18 @@
         </div>
         <div class="recipe_description">
           <h2>Französische Croissants</h2>
-          <div class="description">
-            <p>
-              Schmackhafte Croissants können auch zu Hause sehr einfach gebacken
-              werden. mit ca. 30 Minuten Aufwand kannst du ein wundervolles
-              Frühstück zaubern.
-            </p>
-            </div>
-            <div class="btn_control">
-                <button class="button">Rezept öffnen</button>
+          <div class="recipe_description">
+            
+            <div class="description">
+              <p>
+                Schmackhafte Croissants können auch zu Hause sehr einfach gebacken
+                werden. mit ca. 30 Minuten Aufwand kannst du ein wundervolles
+                Frühstück zaubern.
+              </p>
+              </div>
+              <div class="btn_control">
+                  <button class="button">Rezept öffnen</button>
+              </div>
             </div>
         </div>
       </section>
@@ -68,45 +73,49 @@
       </section>
 
 
-      <section class="pfanne_vs._wok">
-        <h2>Pfannee vs. Wok - Was ist besser?</h2>
-        <div>
-          <img src="./img/wok.jpg" alt="Wok_Bild" />
-        </div>
-        <div>
-          <p>
-            Na, hast du schon mal darüber nachgedacht, was passiert, wenn die
-            Pfanne und der Wok sich streiten? Die Pfanne sagt: „Ich bin die
-            Alleskönnerin, perfekt für Eier, Pfannkuchen und Braten!“ Der Wok
-            kontert: „Na, klar, du bist vielseitig, aber ich bin der Meister im
-            Hoch-Hoch-Temperatur-Feuerwerk! Schnelles Anbraten, Wok-Schütteln
-            und asiatisches Flair - das kannst du nur träumen!“ <br />
-            <br />
-            Am Ende sitzen sie zusammen in der Küche, lachen und denken: „Jeder
-            hat seine Stärken, aber gemeinsam bringen wir die Geschmacksknospen
-            zum Tanzen!“ Ob Pfanne oder Wok – Hauptsache, das Essen wird lecker
-            und die Küche bleibt fröhlich!
-          </p>
+      <section class="pan_wok">
+        <div class="pfanne_wok">
+          <h2>Pfanne vs. Wok - Was ist besser?</h2>
+          <div class="Pfanne_vs_Wok">
+            <img class="wok" src="./img/wok.jpg" alt="Wok_Bild" />
+          </div>
+          <div class="txt">
+            <p>
+              Na, hast du schon mal darüber nachgedacht, was passiert, wenn die
+              Pfanne und der Wok sich streiten? Die Pfanne sagt: „Ich bin die
+              Alleskönnerin, perfekt für Eier, Pfannkuchen und Braten!“ Der Wok
+              kontert: „Na, klar, du bist vielseitig, aber ich bin der Meister im
+              Hoch-Hoch-Temperatur-Feuerwerk! Schnelles Anbraten, Wok-Schütteln
+              und asiatisches Flair - das kannst du nur träumen!“ <br />
+              <br />
+              Am Ende sitzen sie zusammen in der Küche, lachen und denken: „Jeder
+              hat seine Stärken, aber gemeinsam bringen wir die Geschmacksknospen
+              zum Tanzen!“ Ob Pfanne oder Wok – Hauptsache, das Essen wird lecker
+              und die Küche bleibt fröhlich!
+            </p>
+          </div>
         </div>
       </section>
     </main>
 
     <footer>
-      <div class="footer_logo">
-        <a href="./index.html">
-          <img src="./img/logo.png" alt="Startseite" />
-        </a>
-      </div>
-      <div class="social_logos">
-        <a href="https://www.facebook.com">
-          <img class="social" src=".//img/Facebook.png" alt="Facebook" />
-        </a>
-        <a href="https://www.instagram.com">
-          <img class="social" src="./img/ins.png" alt="Instaagram" />
-        </a>
-        <a href="https://x.com/">
-          <img class="social" src="./img/twitter.png" alt="Twitter" />
-        </a>
+      <div class="footer">
+        <div class="footer_logo">
+          <a href="./index.html">
+            <img src="./img/logo.png" alt="Startseite" />
+          </a>
+        </div>
+        <div class="social_logos">
+          <a href="https://www.facebook.com">
+            <img class="social" src=".//img/Facebook.png" alt="Facebook" />
+          </a>
+          <a href="https://www.instagram.com">
+            <img class="social" src="./img/ins.png" alt="Instaagram" />
+          </a>
+          <a href="https://x.com/">
+            <img class="social" src="./img/twitter.png" alt="Twitter" />
+          </a>
+        </div>
       </div>
     </footer>
   </body>
