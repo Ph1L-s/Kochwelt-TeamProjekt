@@ -61,12 +61,13 @@ h2 {
     padding-right: 160px;
     padding-left: 160px;
 }
+.croissant_control {
+    display: flex;
+    
+}
 .croissants img {
     height: 250px;
     border-radius: 12px;
-}
-.recipe_description {
-    padding-left: 32px;
 }
 .recipe  {
     display: flex;
@@ -74,6 +75,10 @@ h2 {
     justify-content: space-between;
     gap: 120px;
 }
+.recipe_description {
+    padding-left: 32px;
+}
+
 .description {
     padding-top: 12px;
     display: flex;
