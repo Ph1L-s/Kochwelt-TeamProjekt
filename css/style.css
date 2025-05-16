@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Vorübergehender Platzhalter-Stil */
+.content-placeholder {
+  padding: 50px;
+  text-align: center;
+  background-color: #f9f9f9;
+  margin: 20px;
+  border-radius: 8px;
+}

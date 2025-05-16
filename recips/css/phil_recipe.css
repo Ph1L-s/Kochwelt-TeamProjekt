@@ -1,0 +1,210 @@
+/* phil_recipe.css - Styles für die Rezeptseite */
+
+/* iframe Einstellungen für Header und Footer */
+iframe {
+  border: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+iframe#header-frame {
+  height: 159px; /* Anpassen nach Bedarf */
+}
+
+iframe#footer-frame {
+  height: 124px; /* Anpassen nach Bedarf */
+}
+
+/* Grundlegendes Layout */
+.recipe-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Überschrift */
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Banner-Bild */
+.recipe-banner {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.recipe-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Meta-Informationen */
+.recipe-meta {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #666;
+}
+
+.meta-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+/* Zutaten-Sektion */
+.ingredients {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.ingredients-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.portions-selector {
+  display: flex;
+  align-items: center;
+}
+
+#portions {
+  width: 60px;
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.portions-button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.portions-button:hover {
+  background-color: darkgreen;
+}
+
+.ingredients-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ingredients-list li {
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+
+.ingredients-list li:last-child {
+  border-bottom: none;
+}
+
+/* Zubereitungs-Sektion */
+.preparation {
+  margin-bottom: 30px;
+}
+
+.preparation-time {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.time-item {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #666;
+}
+
+.time-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.preparation-steps {
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Autor-Sektion */
+.recipe-author {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.author-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+  .recipe-meta {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .preparation-time {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .ingredients-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
