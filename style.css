@@ -1,6 +1,11 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    position: relative;
     box-sizing: border-box;
+}
+body {
+
     font-family: Raleway;
 }
 /*Header*/
@@ -43,10 +48,7 @@ body {
 
 
 /*Main*/
-main {
-    
-    width: 100%;
-}
+
 h2 {
     margin: 0;
     font-weight: 600;
@@ -56,8 +58,9 @@ h2 {
     flex-direction: row;
     padding-top: 64px;
     padding-bottom: 64px;
-    margin-right: 64px;
     max-height: 254px;
+    padding-right: 160px;
+    padding-left: 160px;
 }
 .croissants img {
     height: 250px;
@@ -123,13 +126,19 @@ h2 {
     width: 100%;
     padding-top: 32px;
     padding-bottom: 64px;
+
 }
 
 .pfanne_wok {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    padding-left: 160px;
+    padding-right: 160px;
+}
+.pan_wok {
+    display: flex;
+    flex-direction: row-reverse
 }
 .pfanne_vs._wok h2 {
 
@@ -153,5 +162,5 @@ h2 {
 
 .social_logos img {
     width: 64px;
-    padding-right: 24px;
+    padding-left: 24px;
 }
