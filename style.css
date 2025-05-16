@@ -1,8 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    position: relative;
-    box-sizing: border-box;
+    position: relative;  
 }
 body {
 
@@ -68,6 +67,12 @@ h2 {
 }
 .recipe_description {
     padding-left: 32px;
+}
+.recipe  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 120px;
 }
 .description {
     padding-top: 12px;
@@ -135,6 +140,8 @@ h2 {
     align-items: center;
     padding-left: 160px;
     padding-right: 160px;
+    margin-top: 64px;
+    margin-bottom: 64px;
 }
 .pan_wok {
     display: flex;
@@ -145,9 +152,9 @@ h2 {
 }
 .wok {
    height: 200px;
-    aspect-ratio: 1 / 1;
-    border-radius: 12px;
-    object-fit: cover; 
+   aspect-ratio: 1 / 1;
+   border-radius: 12px;
+   object-fit: cover; 
 }
 
 /*Footer*/
