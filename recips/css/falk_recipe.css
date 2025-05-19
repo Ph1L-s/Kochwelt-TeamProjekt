@@ -128,12 +128,12 @@ hr {
 .border_left {
     border-radius: 8px 0 0 8px;
     margin-bottom: 10px;
-    padding: 8px;
+    padding: 16px;
 }
 .border_right {
     border-radius: 0px 8px 8px 0px;
     margin-bottom: 10px;
-    padding: 8px;
+    padding: 16px;
 }
 /*Zubereitung*/
 .preparation h2 {

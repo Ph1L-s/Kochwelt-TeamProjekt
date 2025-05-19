@@ -16,7 +16,12 @@ body {
   padding-right: 160px;
   padding-left: 160px;
 }
-
+#start {
+  color: green;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 5px;
+}
 .croissant_control {
   display: flex;
 }
