@@ -352,6 +352,7 @@ hr {
     }
     .footer_logo img {
         height: 64px;
+        margin-top: 24px;
     }
     .social_logos img {
         width: 48px;
