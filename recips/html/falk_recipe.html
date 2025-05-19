@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <title>Falko Rezept</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="Kochwelt_icon">
+          <a href="./index.html">
+            <img src="./img/logo.png" alt="Startseite" />
+          </a>
+        </div>
+        <div class="navbar">
+          <a href="#">Start</a>
+          <a href="#">Rezept des Tages</a>
+          <a href="#">Kontakt</a>
+          <a id="nopadding" href="./impressum.html">Impressum</a>
+        </div>
+      </div>
+    </header>
+
+    <!--Falko Rezept-->
+    <div class="recipe">
+      <h1>Gebratene Nudeln</h1>
+      <section class="image">
+        <div>
+          <img class="noodle" src="./img/noodle.jpg" alt="" />
+        </div>
+      </section>
+      <section class="metas">
+        <div class="recipe_meta">
+          <div class="time metapd">
+            <img class="meta" src="./img/icons/clock-regular.svg" alt="time" />
+            25 Min.
+          </div>
+          <div class="level metapd">
+            <img class="meta" src="./img/icons/brain-solid.svg" alt="level" />
+            simple
+          </div>
+          <div class="date metapd">
+            <img
+              class="meta"
+              src="./img/icons/calendar-alt-regular.svg"
+              alt="date"
+            />
+            16.05.2025
+          </div>
+        </div>
+        <hr />
+      </section>
+      <section class="recipe_ingedients">
+        <div>
+          <form class="ingredients_cal">
+            <label class="label" for="ingredients_for">Zutaten für</label>
+            <input
+              class="input"
+              type="number"
+              id="amount"
+              min="0"
+              max="100"
+              value="2"
+              required
+            />
+            <input class="button" type="submit" value="Portionen" />
+          </form>
+        </div>
+        <div class="ingredients">
+          <table class="table">
+            <tr class="grey">
+              <td class="border_left">250 g</td>
+              <td class="border_right">chinesische Eiernudeln, gekocht</td>
+            </tr>
+            <tr class="white">
+              <td class="border_left">200 g</td>
+              <td class="border_right">Sojasprossen oder Mungobohnenkeimlinge</td>
+            </tr>
+            <tr class="grey">
+              <td class="border_left">1 Stk.</td>
+              <td class="border_right">Lauchzwiebel (n)</td> 
+            </tr>
+            <tr class="white">
+              <td class="border_left">200 g</td>
+              <td class="border_right">Geflügelfleisch</td>  
+            </tr>
+            <tr class="grey">
+              <td class="border_left">n. B.</td>
+              <td class="border_right">Öl</td>
+            </tr>
+            <tr class="white">
+              <td class="border_left">n. B.</td>
+              <td class="border_right">Sojasauce</td>
+            </tr>
+            <tr class="grey">
+              <td class="border_left">n. B.</td>
+              <td class="border_right">Sambal Oelek</td>
+            </tr>
+            <tr class="white">
+              <td class="border_left">n. B.</td>
+              <td class="border_right">Paprikapulver</td>
+            </tr>
+            <tr class="grey">
+              <td class="border_left">n. B.</td>
+              <td class="border_right">Currypulver</td>
+            </tr>
+            <tr class="white">
+              <td class="border_left">n. B.</td>
+              <td class="border_right">Chilipulver</td>
+            </tr>
+          </table>
+        </div>
+        <div class="preparation">
+          <h2>Zubereitung</h2>
+          <div class="preparation_meta">
+            <div class="time metapd">
+              <img class="meta" src="./img/icons/clock-regular.svg" alt="time" />
+              ca. 10 Minuten
+            </div>
+            <div class="time metapd">
+              <img class="meta" src="./img/icons/clock-regular.svg" alt="time" />
+              Gesamtzeit 25 Minuten
+            </div>
+          </div>
+          <div class="instructions">
+            <p>
+              Das Fleisch in feine Streifen schneiden und mit Sojasauce und Sambal Oelek vorwürzen.<br><br>
+              5 EL Öl und 1 TL Sojasauce vermischen und in einen Wok oder eine Pfanne geben. Das
+              Fleisch anbraten und dann die Sprossen sowie Lauchzwiebeln dazugeben. Kurz danach
+              die Nudeln zufügen. Ca. 5 Minuten weiter braten lassen und dabei regelmäßig wenden.
+              Zum Schluss mit den angegebenen Gewürzen nach Geschmack würzen.<br><br>
+              Anmerkung: Man verwendet hier bereits gekochte Nudeln. 
+            </p>
+          </div>
+          <div class="creator">
+            <h3>Rezept erstellt von</h3>
+              <div class="profile">
+                <img src="./img/profile.png" alt="profile_img">
+                <p>Falko</p>
+              </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <div class="footer_logo">
+          <a href="./index.html">
+            <img class="logo" src="./img/logo.png" alt="Startseite" />
+          </a>
+        </div>
+        <div class="social_logos">
+          <a href="https://www.facebook.com">
+            <img class="social" src=".//img/Facebook.png" alt="Facebook" />
+          </a>
+          <a href="https://www.instagram.com">
+            <img class="social" src="./img/ins.png" alt="Instaagram" />
+          </a>
+          <a href="https://x.com/">
+            <img class="social" src="./img/twitter.png" alt="Twitter" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
