@@ -1,27 +1,11 @@
-/* phil_recipe.css - Styles für die Rezeptseite */
-
-/* iframe Einstellungen für Header und Footer */
-iframe {
-  border: none;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-iframe#header-frame {
-  height: 159px; /* Anpassen nach Bedarf */
-}
-
-iframe#footer-frame {
-  height: 124px; /* Anpassen nach Bedarf */
-}
+/* phil_recipe.css - Überarbeitete Styles für die Rezeptseite - angepasst an das Mockup */
 
 /* Grundlegendes Layout */
 .recipe-container {
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 20px;
+  font-family: 'Raleway', sans-serif;
 }
 
 /* Überschrift */
@@ -29,14 +13,14 @@ h1 {
   font-size: 32px;
   font-weight: 600;
   margin-bottom: 20px;
-  color: #333;
+  color: #333333;
 }
 
 h2 {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 15px;
-  color: #333;
+  color: #333333;
 }
 
 /* Banner-Bild */
@@ -44,7 +28,7 @@ h2 {
   width: 100%;
   height: auto;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 0;
   margin-bottom: 20px;
 }
 
@@ -53,6 +37,7 @@ h2 {
   height: auto;
   display: block;
   object-fit: cover;
+  max-height: 400px;
 }
 
 /* Meta-Informationen */
@@ -61,14 +46,13 @@ h2 {
   gap: 30px;
   margin-bottom: 30px;
   padding: 10px 0;
-  border-bottom: 1px solid #eee;
 }
 
 .meta-item {
   display: flex;
   align-items: center;
   font-size: 16px;
-  color: #666;
+  color: #666666;
 }
 
 .meta-icon {
@@ -79,17 +63,24 @@ h2 {
 
 /* Zutaten-Sektion */
 .ingredients {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
   margin-bottom: 30px;
 }
 
 .ingredients-header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-bottom: 15px;
+}
+
+.ingredients-title {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.ingredients-title span {
+  font-size: 24px;
+  font-weight: 600;
+  margin-right: 10px;
 }
 
 .portions-selector {
@@ -99,40 +90,48 @@ h2 {
 
 #portions {
   width: 60px;
+  height: 38px;
   text-align: center;
   padding: 8px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  margin-right: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 0;
 }
 
 .portions-button {
-  background-color: green;
+  background-color: #008a00;
   color: white;
   border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
+  padding: 10px 16px;
+  height: 38px;
+  border-radius: 0;
   cursor: pointer;
   font-weight: 500;
 }
 
 .portions-button:hover {
-  background-color: darkgreen;
+  background-color: #006400;
 }
 
-.ingredients-list {
-  list-style-type: none;
-  padding: 0;
+/* Zutaten-Tabelle statt Liste */
+.ingredients-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px;
 }
 
-.ingredients-list li {
-  padding: 12px 0;
-  border-bottom: 1px solid #eee;
+.ingredients-table tr:nth-child(odd) td {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  border: none;
+}
+
+.ingredients-table tr:nth-child(even) td {
+  background-color: #ffffff;
+}
+
+.ingredients-table td {
+  padding: 12px 15px;
   color: #333;
-}
-
-.ingredients-list li:last-child {
-  border-bottom: none;
 }
 
 /* Zubereitungs-Sektion */
@@ -151,6 +150,9 @@ h2 {
   align-items: center;
   font-size: 16px;
   color: #666;
+  background-color: #f9f9f9;
+  padding: 8px 15px;
+  border-radius: 5px;
 }
 
 .time-icon {
@@ -164,11 +166,15 @@ h2 {
   color: #333;
 }
 
+.preparation-steps p {
+  margin-bottom: 15px;
+}
+
 /* Autor-Sektion */
 .recipe-author {
   margin-top: 40px;
   padding-top: 20px;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #f9f9f9;
 }
 
 .author-info {
@@ -182,6 +188,7 @@ h2 {
   height: 60px;
   border-radius: 50%;
   object-fit: cover;
+  background-color: #f9f9f9;
 }
 
 .author-name {
@@ -206,5 +213,9 @@ h2 {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
+  }
+  
+  .ingredients-title {
+    margin-bottom: 10px;
   }
 }
