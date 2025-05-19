@@ -1,4 +1,8 @@
 /*Chris Rezept*/
+body {
+    margin: 0;
+    font-family: Raleway;
+}
 .mein-rezept h1 {
     padding-top: 56px;
     padding-left: 160px;
