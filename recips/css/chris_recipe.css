@@ -1,0 +1,251 @@
+/*Chris Rezept*/
+.mein-rezept h1 {
+    padding-top: 56px;
+    padding-left: 160px;
+    padding-right: 160px;
+
+}
+
+.img-container {
+    height: 200px;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    display: flex;
+    padding-top: 12px;
+}
+
+.img-container img {
+    border: 8px;
+}
+
+.mein-rezept-img {
+    height: 200px;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    border-radius: 12px;
+    margin-left: 160px;
+    margin-right: 160px;
+}
+
+.time-level-date {
+    padding-top: 32px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-left: 160px;
+    padding-right: 160px;
+}
+
+.time {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    background-color: rgba(0, 0, 0, 0.05);
+    width: 100px;
+    justify-content: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 8px;
+}
+
+.level {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    background-color: rgba(0, 0, 0, 0.05);
+    width: 100px;
+    justify-content: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-bottom: 4px;
+    border-radius: 8px;
+}
+
+.date {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    background-color: rgba(0, 0, 0, 0.05);
+    width: 120px;
+    justify-content: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 8px;
+}
+
+.time img {
+    height: 16px;
+}
+
+.level img {
+    height: 16px;
+}
+
+.date img {
+    height: 16px;
+}
+
+hr {
+    margin-top: 64px;
+    background-color: rgba(0, 0, 0, 0.05);
+    margin-left: 160px;
+    margin-right: 160px;
+}
+
+.portionen {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 8px;
+    padding-left: 160px;
+    padding-right: 160px;
+
+}
+
+.container-btn {
+    display: flex;
+    width: 200px;
+    padding-left: 8px;
+    border-width: 1px;
+}
+
+input {
+    height: 32px;
+    flex-grow: 1;
+    border-radius: 8px 0px 0px 8px;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.05);
+    padding-left: 16px;
+}
+
+.btn-portionen {
+    text-decoration: none;
+    color: white;
+    font-family: 'raleway';
+    background-color: green;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 0px 8px 8px 0px;
+    border-color: rgba(0, 0, 0, 0.05);
+    border-width: 1px;
+    cursor: pointer;
+}
+
+.btn-portionen:hover {
+    background-color: rgb(28, 115, 28);
+}
+
+.table-style {
+    width: 100%;
+    padding-top: 16px;
+    padding-left: 160px;
+    padding-right: 160px;
+
+}
+
+.table-gray {
+    background-color: rgba(0, 0, 0, 0.05);
+    width: 100%;
+    padding-left: 32px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 8px;
+}
+
+.table-white {
+    background-color: white;
+    width: 100%;
+    padding-left: 32px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 8px;
+}
+
+h2 {
+    padding-top: 32px;
+    padding-left: 160px;
+    padding-right: 160px;
+}
+
+.cnt-time-zubereitung {
+    padding-top: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-left: 160px;
+    padding-right: 160px;
+}
+
+.time-zubereitung {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    background-color: rgba(0, 0, 0, 0.05);
+    width: 150px;
+    border-radius: 8px;
+    justify-content: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.time-zubereitung2 {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    background-color: rgba(0, 0, 0, 0.05);
+    width: 200px;
+    border-radius: 8px;
+    justify-content: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.time-zubereitung img {
+    height: 16px;
+}
+
+.time-zubereitung2 img {
+    height: 16px;
+}
+
+.zubereitung-description p {
+    padding-top: 32px;
+    padding-left: 160px;
+    padding-right: 160px;
+}
+
+.erstellt-von h3 {
+    padding-top: 32px;
+    padding-left: 160px;
+    padding-right: 160px;
+    font-size: 24px;
+}
+
+.erstellt-von-profil {
+    padding-top: 16px;
+    padding-bottom: 128px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 160px;
+    padding-right: 160px;
+}
+
+.erstellt-von-profil img {
+    border-radius: 50%;
+    height: 80px;
+}
+
+.erstellt-von-profil p {
+    padding-left: 32px;
+    font-size: 24px
+}
+p.slogan {
+    font-size: 16px;
+    padding-top: 8px;
+    padding-left: px;
+}
