@@ -1,18 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
-    position: relative;  
-}
-body {
-    font-family: Raleway;
-}
-
 /*Kontaktformular*/
 .controller-fr {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 .kontaktformular h2 {
@@ -65,7 +58,7 @@ body {
     background-color: green;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
 }
@@ -78,4 +71,15 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+@media(max-width: 500px) {
+    .kontaktformular h2 {
+        font-size: 16px;
+    }
+    .kontaktformular input{
+        padding: 20px;
+    }
+
+    
 }

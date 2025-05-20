@@ -2,14 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rezept Christoph</title>
-    <link rel="stylesheet" type="text/css" href="../css/chris_recipe.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="../../components/header.html" /> -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/falk_recipe.css" />
     <link rel="stylesheet" type="text/css" href="../../css/header.css" />
     <link rel="stylesheet" type="text/css" href="../../css/footer.css" />
-    <title>Kochwelt</title>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <title>Christoph Rezept</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
@@ -18,146 +17,151 @@
 
 <body>
     <header>
-        <div class="header">
-            <div class="Kochwelt_icon">
-                <a href="./index.html">
-                    <img src="../../img/logo.png" alt="Startseite" />
-                </a>
+        <div class="header-control">
+            <div class="header">
+                <div class="Kochwelt_icon">
+                    <a href="../index.html">
+                        <img src="../../img/logo.png" alt="Startseite" />
+                    </a>
+                </div>
+                <div class="navbar">
+                    <a href="../../components/main.html">Start</a>
+                    <a href="../../recips/html/falk_recipe.html">Rezept des Tages</a>
+                    <a href="../../kontakt.html">Kontakt</a>
+                    <a id="nopadding" href="../../Impressum/impressum.html">Impressum</a>
+                </div>
             </div>
-            <div class="navbar">
-            <a href="../../components/main.html">Start</a>
-            <a href="../../rezepte.html">Rezept des Tages</a>
-            <a href="../../kontakt.html">Kontakt</a>
-            <a id="nopadding" href="../../Impressum/impressum.html">Impressum</a>
-          </div>
         </div>
     </header>
-    <section id="rezept">
-        <div class="mein-rezept">
-            <div class="mein-rezept-control">
-                <h1>Penne ál pomodoro </h1>
 
-                <div class="img-container">
-                    <img class="mein-rezept-img" src="../../img/pennetomtaten.jpg" alt="Éin Bild von Nudeln">
-                </div>
-
-                <div class="time-level-date">
-                    <div class="time">
-                        <img src="../../img/icons/clock-regular.svg" alt="">
-                        <p class ="tld-style"> 30 Min</p>
-                    </div>
-
-                    <div class="level">
-                        <img class="tld-styke" src="../../img/icons/brain-solid.svg" alt="">
-                        <p class ="tld-style"> simpel</p>
-
-                    </div>
-
-                    <div class="date">
-                        <img class="tld-styke" src="../../img/icons/calendar-alt-regular.svg" alt="">
-                        <p class ="tld-style"> 16.05.2025</p>
-
-                    </div>
-                </div>
-                <hr>
+    <!--Falko Rezept-->
+    <div class="recipe">
+        <h1>Penne ál pomodoro</h1>
+        <section class="image">
+            <div>
+                <img class="noodle" src="../../img/pennetomtaten.jpg" alt="" />
             </div>
-
-        </div>
-    </section>
-
-    <div class="portionen">
-        <p id="counter">Zutaten für</p>
-        <form class="container-btn">
-            <input type="number" placeholder="Anzahl..."  min="-1" required value="1">
-            <button type="submit" class="btn-portionen">Portionen</button>
-        </form>
+        </section>
+        <section class="metas">
+            <div class="recipe_meta">
+                <div class="time metapd">
+                    <img class="meta" src="../../img/icons/clock-regular.svg" alt="time" />
+                    30 Min.
+                </div>
+                <div class="level metapd">
+                    <img class="meta" src="../../img/icons/brain-solid.svg" alt="level" />
+                    simple
+                </div>
+                <div class="date metapd">
+                    <img class="meta" src="../../img/icons/calendar-alt-regular.svg" alt="date" />
+                    16.05.2025
+                </div>
+            </div>
+            <hr />
+        </section>
+        <section class="recipe_ingedients">
+            <div>
+                <form class="ingredients_cal">
+                    <label class="label" for="ingredients_for">Zutaten für</label>
+                    <input class="input" type="number" id="amount" min="1" max="100" value="2" required />
+                    <input class="button" type="submit" value="Portionen" />
+                </form>
+            </div>
+            <div class="ingredients">
+                <table class="table">
+                    <tr class="grey">
+                        <td class="border_left"><span>400</span> g</td>
+                        <td class="border_right">Olivenöl</td>
+                    </tr>
+                    <tr class="white">
+                        <td class="border_left"><span>2</span> g</td>
+                        <td class="border_right">Knoblauch</td>
+                    </tr>
+                    <tr class="grey">
+                        <td class="border_left">n. B.</td>
+                        <td class="border_right">Olivenöl</td>
+                    </tr>
+                    <tr class="white">
+                        <td class="border_left">n. B.</td>
+                        <td class="border_right">Salz und frisch gemahlener Pfeffer</td>
+                    </tr>
+                    <tr class="grey">
+                        <td class="border_left">n. B.</td>
+                        <td class="border_right">Basilikum</td>
+                    </tr>
+                    <tr class="white">
+                        <td class="border_left">n. B.</td>
+                        <td class="border_right">Parmesam</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="preparation">
+                <h2>Zubereitung</h2>
+                <div class="preparation_meta">
+                    <div class="time metapd">
+                        <img class="meta" src="../../img/icons/clock-regular.svg" alt="time" />
+                        ca. 10 Minuten
+                    </div>
+                    <div class="time metapd">
+                        <img class="meta" src="../../img/icons/clock-regular.svg" alt="time" />
+                        Gesamtzeit 25 Minuten
+                    </div>
+                </div>
+                <div class="instructions">
+                    <p>
+                        Den Knoblauch schälen und in dünne Scheiben hacken.
+                        Die Tomaten in Würfel schneiden. Wenn Sie Tomaten aus der Dose verwenden, ist es besser, sie zu
+                        pürieren.
+                        Das Olivenöl in einer Pfanne erhitzen und den Knoblauch hinzufügen. 1-2 Minuten rösten lassen,
+                        aber darauf achten,
+                        dass er nicht verbrennt, da er dem Rezept einen bitteren Geschmack verleihen kann.
+                        Tomaten oder Tomatenmischung hinzufügen und mit Salz und Pfeffer würzen. Auf kleiner Flamme 15
+                        Minuten köcheln lassen,
+                        bis die Sauce eingedickt ist. Das Basilikum erst gegen Ende der Garzeit der Sauce hinzufügen,
+                        damit es seinen frischen Geschmack behält.
+                        Während die Sauce köchelt, die Penne in Salzwasser nach Packungsanweisung kochen. Achten Sie
+                        darauf, die Nudeln nicht
+                        zu lange zu kochen. Wenn Sie sie "al dente" kochen, haben sie eine viel bessere Konsistenz.
+                        Die gekochten Penne mit der Sauce mischen und noch einige Minuten kochen lassen, damit sich alle
+                        Aromen verbinden.
+                        Vor dem Servieren wird das Gericht mit geriebenem Parmesan bestreut, der der Sauce einen
+                        cremigen und intensiven Geschmack verleiht.
+                    </p>
+                </div>
+                <div class="creator">
+                    <h3>Rezept erstellt von</h3>
+                    <div class="profile">
+                        <img src="../../img/profile_chris.png" alt="profile_img">
+                        <p>Christoph</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-    <table class="table-style" id="changeport">
-        <tr>
-            <td class="table-gray"> 400g Penne</td>
-        </tr>
-        <tr>
-            <td class="table-white"> Olivenöl</td>
-        </tr>
-        <tr>
-            <td class="table-gray"> 2 Nelken Knoblauch</td>
-        </tr>
-        <tr>
-            <td class="table-white"> Salz und frisch gemahlener schwarzer Pfeffer</td>
-        </tr>
-        <tr>
-            <td class="table-gray"> Basilikum</td>
-        </tr>
-        <tr>
-            <td class="table-white"> Parmesam</td>
-        </tr>
-    </table>
 
-    <div class="zubereitung">
-        <h2>Zubereitung</h2>
-        <div class="cnt-time-zubereitung">
-            <div class="time-zubereitung">
-                <img src="../../img/icons/clock-regular.svg" alt="">
-                <p class ="tz-style"> ca. 15 Min</p>
+    <footer>
+        <div class="footer">
+            <div class="footer_logo">
+                <a href="./footer.html">
+                    <img src="../../img/logo_small_white.png" alt=" Kochwelt Startseiten verlinkung" />
+                    <div class="Kochwelt_h3_footer_control">
+                        <h3>Kochwelt</h3>
+                    </div>
+                </a>
             </div>
-            <form class="cnt-time-zubereitung2">
-                <div class="time-zubereitung2">
-                    <img src="../../img/icons/clock-regular.svg" alt="">
-                    <p class ="tz-style"> Gesamtzeit ca. 30 Min</p>
-                </div>
-            </form>
-
-        </div>
-        <div class="zubereitung-description">
-            <p id="zubereitung-text"> 
-                Den Knoblauch schälen und in dünne Scheiben hacken. 
-                Die Tomaten in Würfel schneiden. Wenn Sie Tomaten aus der Dose verwenden, ist es besser, sie zu pürieren.
-                Das Olivenöl in einer Pfanne erhitzen und den Knoblauch hinzufügen. 1-2 Minuten rösten lassen, aber darauf achten,
-                dass er nicht verbrennt, da er dem Rezept einen bitteren Geschmack verleihen kann.
-                Tomaten oder Tomatenmischung hinzufügen und mit Salz und Pfeffer würzen. Auf kleiner Flamme 15 Minuten köcheln lassen, 
-                bis die Sauce eingedickt ist. Das Basilikum erst gegen Ende der Garzeit der Sauce hinzufügen, 
-                damit es seinen frischen Geschmack behält.
-                Während die Sauce köchelt, die Penne in Salzwasser nach Packungsanweisung kochen. Achten Sie darauf, die Nudeln nicht 
-                zu lange zu kochen. Wenn Sie sie "al dente" kochen, haben sie eine viel bessere Konsistenz.
-                Die gekochten Penne mit der Sauce mischen und noch einige Minuten kochen lassen, damit sich alle Aromen verbinden.
-                Vor dem Servieren wird das Gericht mit geriebenem Parmesan bestreut, der der Sauce einen cremigen und intensiven Geschmack verleiht.
-            </p>
-        </div>
-        <div class="erstellt-von">
-            <h3>Rezept erstellt von</h3>
-
-            <div class="erstellt-von-profil">
-                <img src="../../img/profile_chris.png" alt="">
-                <div class ="p-controller">
-                <p id="profilname"> Christoph</p>
-                <p class ="slogan">  - Ich koche mit Liebe und gelegentlichen Fluchen </p>
-                </div>
+            <div class="social_logos half-width">
+                <a href="https://www.facebook.com">
+                    <img class="social" src="../../img/Facebook.png" alt="Facebook" />
+                </a>
+                <a href="https://www.instagram.com">
+                    <img class="social" src="../../img/ins.png" alt="Instagram" />
+                </a>
+                <a href="https://x.com/">
+                    <img class="social" src="../../img/twitter.png" alt="Twitter" />
+                </a>
             </div>
         </div>
-    </div>
-</body>
-<footer>
-      <div class="footer">
-        <div class="footer_logo">
-          <a href="./footer.html">
-            <img src="../../img/logo_small_white.png" alt=" Kochwelt Startseiten verlinkung" />
-              <div class="Kochwelt_h3_footer_control">
-                      <h3>Kochwelt</h3>
-                  </div>
-          </a>
-        </div>
-        <div class="social_logos half-width">
-          <a href="https://www.facebook.com">
-            <img class="social" src="../../img/Facebook.png" alt="Facebook" />
-          </a>
-          <a href="https://www.instagram.com">
-            <img class="social" src="../../img/ins.png" alt="Instagram" />
-          </a>
-          <a href="https://x.com/">
-            <img class="social" src="../../img/twitter.png" alt="Twitter" />
-          </a>
-        </div>
-      </div>
     </footer>
+</body>
 
 </html>
