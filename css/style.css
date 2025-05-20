@@ -1,30 +1,90 @@
-/* ./css/style.css */
-
+/* ./css/style.css - Genereller Overall-stylesheet  */
 
 * {
-  margin: 0;
-  padding: 0;
+  margin    : 0;
+  padding   : 0;
   box-sizing: border-box;
-  position: relative;
+  position  : relative;
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
-    width: 100%;
-    max-width: 1920px;
-    margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+  width      : 100%;
+  max-width  : 1920px;
+  margin     : 0 auto;
+  overflow-x : hidden;
 }
 
 h2 {
-  margin: 0;
+  margin     : 0;
   font-weight: 600;
 }
 
 /* Vorübergehender Platzhalter-Stil */
 .content-placeholder {
-  padding: 50px;
-  text-align: center;
+  padding         : 50px;
+  text-align      : center;
   background-color: #f9f9f9;
-  margin: 20px;
-  border-radius: 8px;
+  margin          : 20px;
+  border-radius   : 8px;
+}
+
+/* Allgemeine Container-Klasse, die in verschiedenen Teilen der Website verwendet werden kann */
+.container {
+  max-width: 1920px;
+  margin   : 0 auto;
+  width    : 100%;
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 1200px) {
+
+  /* Anpassungen für mittlere Bildschirme */
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1000px) {
+
+  /* Anpassungen für kleinere Bildschirme */
+  body {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Anpassungen für Tablets */
+  body {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Anpassungen für Smartphones */
+  body {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 320px) {
+
+  /* Anpassungen für sehr kleine Mobilgeräte */
+  body {
+    font-size: 13px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
 }

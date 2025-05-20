@@ -20,20 +20,36 @@
     />
 </head>
 <body>
-    <!-- Header-Bereich -->
+    <!-- Header-Bereich mit aktualisierten Funktionen -->
     <header>
       <div class="header-control">
         <div class="header">
           <div class="Kochwelt_icon">
             <a href="./main.html">
-              <img src="../img/logo.png" alt="Startseite" />
+              <img src="../img/logo_small.png" alt="Startseite" />
+              <div class="Kochwelt_h3_header_control">
+                <h3>Kochwelt</h3>
+              </div>
             </a>
           </div>
           <div class="navbar">
-            <a href="./main.html">Start</a>
+            <a href="./main.html" id="start">Start</a>
             <a href="../recips/html/falk_recipe.html">Rezept des Tages</a>
             <a href="../kontakt.html">Kontakt</a>
             <a id="nopadding" href="../Impressum/impressum.html">Impressum</a>
+          </div>
+          
+          <!-- Kompaktes Menü für Bildschirme unter 1280px -->
+          <div class="menu-container">
+            <button class="menu-toggle" aria-label="Menü öffnen">
+              <span class="menu-icon"></span>
+            </button>
+            <div class="compact-navbar">
+              <a href="./main.html">Start</a>
+              <a href="../recips/html/falk_recipe.html">Rezept des Tages</a>
+              <a href="../kontakt.html">Kontakt</a>
+              <a href="../Impressum/impressum.html">Impressum</a>
+            </div>
           </div>
         </div>
       </div>
@@ -72,15 +88,15 @@
                 <div class="lust_container">
                     <div class="lust_control">
                         <a class="link" href="../recips/html/falk_recipe.html">
-                            <img src="../img/noodle.jpg" alt="Croissant_Bild" />
+                            <img src="../img/noodle.jpg" alt="Nudel-Bild" />
                             Gebratene Nudeln
                         </a>
                         <a class="link" href="../recips/html/chris_recipe.html">
-                            <img src="../img/pennetomtaten.jpg" alt="Croissant_Bild" />
+                            <img src="../img/pennetomtaten.jpg" alt="Penne-Bild" />
                             Penne ál pomodoro
                         </a>
                         <a class="link" href="../recips/html/phil_recipe.html">
-                            <img src="../img/chili-chicken.jpg" alt="chili chicken Bild" />
+                            <img src="../img/chili-chicken.jpg" alt="Chili-Chicken Bild" />
                             Chili-Hühnchen mit Erdnüssen
                         </a>
                     </div>
@@ -115,29 +131,35 @@
         </section>
     </main>
     
-    <!-- Footer-Bereich -->
+    <!-- Footer-Bereich mit Scroll-to-Top Funktion -->
     <footer>
       <div class="footer">
         <div class="footer_logo">
-          <a href="./footer.html">
-            <img src="../../img/logo_small_white.png" alt=" Kochwelt Startseiten verlinkung" />
-              <div class="Kochwelt_h3_footer_control">
-                      <h3>Kochwelt</h3>
-                  </div>
+          <a href="#" class="scroll-to-top">
+            <img src="../img/logo_small_white.png" alt="Kochwelt Startseiten verlinkung" />
+            <div class="Kochwelt_h3_footer_control">
+              <h3>Kochwelt</h3>
+            </div>
           </a>
         </div>
         <div class="social_logos half-width">
           <a href="https://www.facebook.com">
-            <img class="social" src="../../img/Facebook.png" alt="Facebook" />
+            <img class="social" src="../img/Facebook.png" alt="Facebook" />
           </a>
           <a href="https://www.instagram.com">
-            <img class="social" src="../../img/ins.png" alt="Instagram" />
+            <img class="social" src="../img/ins.png" alt="Instagram" />
           </a>
           <a href="https://x.com/">
-            <img class="social" src="../../img/twitter.png" alt="Twitter" />
+            <img class="social" src="../img/twitter.png" alt="Twitter" />
           </a>
         </div>
       </div>
     </footer>
+
+    <!-- JavaScript für Header-Menü -->
+    <script src="../js/header.js"></script>
+    
+    <!-- JavaScript für Footer Scroll-to-Top -->
+    <script src="../js/footer.js"></script>
 </body>
 </html>

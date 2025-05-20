@@ -16,19 +16,38 @@
     />
   </head>
   <body>
+    <!-- Header-Bereich -->
     <header>
       <div class="header-control">
         <div class="header">
           <div class="Kochwelt_icon">
-            <a href="../index.html">
-              <img src="../../img/logo.png" alt="Startseite" />
+            <a href="../../components/main.html">
+              <img src="../../img/logo_small.png" alt="Startseite" />
+              <div class="Kochwelt_h3_header_control">
+                <h3>Kochwelt</h3>
+              </div>
             </a>
           </div>
           <div class="navbar">
             <a href="../../components/main.html">Start</a>
-            <a href="../../recips/html/falk_recipe.html">Rezept des Tages</a>
+            <a href="../../rezepte.html" class="active">Rezept des Tages</a>
             <a href="../../kontakt.html">Kontakt</a>
-            <a id="nopadding" href="../../Impressum/impressum.html">Impressum</a>
+            <a id="nopadding" href="../../Impressum/impressum.html"
+              >Impressum</a
+            >
+          </div>
+
+          <!-- Kompaktes Menü für Bildschirme unter 1280px -->
+          <div class="menu-container">
+            <button class="menu-toggle" aria-label="Menü öffnen">
+              <span class="menu-icon"></span>
+            </button>
+            <div class="compact-navbar">
+              <a href="../../components/main.html">Start</a>
+              <a href="../../rezepte.html">Rezept des Tages</a>
+              <a href="../../kontakt.html">Kontakt</a>
+              <a href="../../Impressum/impressum.html">Impressum</a>
+            </div>
           </div>
         </div>
       </div>
@@ -45,11 +64,19 @@
       <section class="metas">
         <div class="recipe_meta">
           <div class="time metapd">
-            <img class="meta" src="../../img/icons/clock-regular.svg" alt="time" />
+            <img
+              class="meta"
+              src="../../img/icons/clock-regular.svg"
+              alt="time"
+            />
             25 Min.
           </div>
           <div class="level metapd">
-            <img class="meta" src="../../img/icons/brain-solid.svg" alt="level" />
+            <img
+              class="meta"
+              src="../../img/icons/brain-solid.svg"
+              alt="level"
+            />
             simple
           </div>
           <div class="date metapd">
@@ -67,7 +94,15 @@
         <div>
           <form class="ingredients_cal">
             <label class="label" for="ingredients_for">Zutaten für</label>
-            <input class="input" type="number" id="amount" min="1" max="100" value="2" required/>
+            <input
+              class="input"
+              type="number"
+              id="amount"
+              min="1"
+              max="100"
+              value="2"
+              required
+            />
             <input class="button" type="submit" value="Portionen" />
           </form>
         </div>
@@ -79,15 +114,17 @@
             </tr>
             <tr class="white">
               <td class="border_left"><span>200</span> g</td>
-              <td class="border_right">Sojasprossen oder Mungobohnenkeimlinge</td>
+              <td class="border_right">
+                Sojasprossen oder Mungobohnenkeimlinge
+              </td>
             </tr>
             <tr class="grey">
               <td class="border_left"><span>1 S</span>tk.</td>
-              <td class="border_right">Lauchzwiebel (n)</td> 
+              <td class="border_right">Lauchzwiebel (n)</td>
             </tr>
             <tr class="white">
               <td class="border_left"><span>200</span> g</td>
-              <td class="border_right">Geflügelfleisch</td>  
+              <td class="border_right">Geflügelfleisch</td>
             </tr>
             <tr class="grey">
               <td class="border_left">n. B.</td>
@@ -119,43 +156,57 @@
           <h2>Zubereitung</h2>
           <div class="preparation_meta">
             <div class="time metapd">
-              <img class="meta" src="../../img/icons/clock-regular.svg" alt="time" />
+              <img
+                class="meta"
+                src="../../img/icons/clock-regular.svg"
+                alt="time"
+              />
               ca. 10 Minuten
             </div>
             <div class="time metapd">
-              <img class="meta" src="../../img/icons/clock-regular.svg" alt="time" />
+              <img
+                class="meta"
+                src="../../img/icons/clock-regular.svg"
+                alt="time"
+              />
               Gesamtzeit 25 Minuten
             </div>
           </div>
           <div class="instructions">
             <p>
-              Das Fleisch in feine Streifen schneiden und mit Sojasauce und Sambal Oelek vorwürzen.<br><br>
-              5 EL Öl und 1 TL Sojasauce vermischen und in einen Wok oder eine Pfanne geben. Das
-              Fleisch anbraten und dann die Sprossen sowie Lauchzwiebeln dazugeben. Kurz danach
-              die Nudeln zufügen. Ca. 5 Minuten weiter braten lassen und dabei regelmäßig wenden.
-              Zum Schluss mit den angegebenen Gewürzen nach Geschmack würzen.<br><br>
-              Anmerkung: Man verwendet hier bereits gekochte Nudeln. 
+              Das Fleisch in feine Streifen schneiden und mit Sojasauce und
+              Sambal Oelek vorwürzen.<br /><br />
+              5 EL Öl und 1 TL Sojasauce vermischen und in einen Wok oder eine
+              Pfanne geben. Das Fleisch anbraten und dann die Sprossen sowie
+              Lauchzwiebeln dazugeben. Kurz danach die Nudeln zufügen. Ca. 5
+              Minuten weiter braten lassen und dabei regelmäßig wenden. Zum
+              Schluss mit den angegebenen Gewürzen nach Geschmack würzen.<br /><br />
+              Anmerkung: Man verwendet hier bereits gekochte Nudeln.
             </p>
           </div>
           <div class="creator">
             <h3>Rezept erstellt von</h3>
-              <div class="profile">
-                <img src="../../img/falko_img.jpg" alt="profile_img">
-                <p>Falko</p>
-              </div>
+            <div class="profile">
+              <img src="../../img/falko_img.jpg" alt="profile_img" />
+              <p>Falko</p>
+            </div>
           </div>
         </div>
       </section>
     </div>
 
+    <!-- Footer-Bereich -->
     <footer>
       <div class="footer">
         <div class="footer_logo">
-          <a href="./footer.html">
-            <img src="../../img/logo_small_white.png" alt=" Kochwelt Startseiten verlinkung" />
-              <div class="Kochwelt_h3_footer_control">
-                      <h3>Kochwelt</h3>
-                  </div>
+          <a href="#" class="scroll-to-top">
+            <img
+              src="../../img/logo_small_white.png"
+              alt="Kochwelt Startseiten verlinkung"
+            />
+            <div class="Kochwelt_h3_footer_control">
+              <h3>Kochwelt</h3>
+            </div>
           </a>
         </div>
         <div class="social_logos half-width">
@@ -171,5 +222,11 @@
         </div>
       </div>
     </footer>
+
+    <!-- JavaScript für Header-Menü -->
+    <script src="../../js/header.js"></script>
+
+    <!-- JavaScript für Footer Scroll-to-Top -->
+    <script src="../../js/footer.js"></script>
   </body>
 </html>

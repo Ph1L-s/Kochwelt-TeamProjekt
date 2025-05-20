@@ -1,3 +1,5 @@
+/* ./css/main.css -  dashbord/landingpage-stylesheet  */
+
 .croissants {
   display: flex;
   flex-direction: row;
@@ -6,12 +8,17 @@
   padding-right: 160px;
   padding-left: 160px;
 }
+
+/* Entfernen der Unterstrichdefinition hier, da dies jetzt durch header.css gehandhabt wird */
+/* 
 #start {
   color: green;
   text-decoration: underline;
   text-underline-offset: 10px;
   text-decoration-thickness: 5px;
 }
+*/
+
 .croissant_control {
   display: flex;
 }
@@ -197,8 +204,8 @@
       width: 100%;
       margin-bottom: 32px;
   }
-
 }
+
 @media(max-width:750px) {
   h2 {
     font-size: 20px;
@@ -237,5 +244,3 @@
       width: 100%;
   }
 }
-
-

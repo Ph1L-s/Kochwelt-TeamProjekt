@@ -1,0 +1,179 @@
+<!-- philRecipe.html - recipe - Hypertext Markup Language  -->
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chili-Hühnchen mit Erdnüssen - Kochwelt</title>
+    
+    <!-- Basis-Styling -->
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/header.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="../../recips/css/phil_recipe.css" />
+    
+    <!-- Schriftarten -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Verbesserter Header-Bereich mit wechselnden Unterstrichlinien -->
+    <header>
+      <div class="header-control">
+        <div class="header">
+          <div class="Kochwelt_icon">
+            <a href="../../components/main.html">
+              <img src="../../img/logo_small.png" alt="Startseite" />
+                <div class="Kochwelt_h3_header_control">
+                  <h3>Kochwelt</h3>
+              </div>
+            </a>
+          </div>
+          
+          <!-- Desktop-Navbar (wird ab 1280px ausgeblendet) -->
+          <div class="navbar">
+            <a href="../../components/main.html">Start</a>
+            <a href="../../rezepte.html" class="active">Rezept des Tages</a>
+            <a href="../../kontakt.html">Kontakt</a>
+            <a id="nopadding" href="../../Impressum/impressum.html">Impressum</a>
+            <!-- Der bewegliche Hover-Unterstrich wird per JavaScript hinzugefügt -->
+          </div>
+          
+          <!-- Kompaktes Menü für Bildschirme unter 1280px -->
+          <div class="menu-container">
+            <button class="menu-toggle" aria-label="Menü öffnen">
+              <span class="menu-icon"></span>
+            </button>
+            <div class="compact-navbar">
+              <a href="../../components/main.html">Start</a>
+              <a href="../../rezepte.html">Rezept des Tages</a>
+              <a href="../../kontakt.html">Kontakt</a>
+              <a href="../../Impressum/impressum.html">Impressum</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <!-- Hauptinhalt - Rezept im Stil des Screenshots -->
+    <main>
+      <div class="recipe-container">
+        <h1>Chili-Hühnchen mit Erdnüssen</h1>
+        
+        <div class="recipe-banner">
+          <img src="../../img/chili-chicken.jpg" alt="Chili-Hühnchen mit Erdnüssen" />
+        </div>
+        
+        <div class="recipe-meta">
+          <div class="meta-item">
+            <img src="../../img/icons/clock-regular.svg" alt="Zeitdauer" class="meta-icon" />
+            <span>40 Min</span>
+          </div>
+          <div class="meta-item">
+            <img src="../../img/icons/brain-solid.svg" alt="Schwierigkeitsgrad" class="meta-icon" />
+            <span>mittel</span>
+          </div>
+          <div class="meta-item">
+            <img src="../../img/icons/calendar-alt-regular.svg" alt="Datum" class="meta-icon" />
+            <span>18.05.2025</span>
+          </div>
+        </div>
+        
+        <section class="ingredients">
+          <div class="ingredients-header">
+            <h2>Zutaten für</h2>
+            <div class="portions-selector">
+              <input type="number" value="4" min="1" max="20" id="portions" />
+              <button class="portions-button">Portionen</button>
+            </div>
+          </div>
+          
+          <table class="ingredients-table">
+            <tbody id="ingredients-list">
+              <!-- Die Tabelle wird dynamisch mit JavaScript gefüllt -->
+            </tbody>
+          </table>
+        </section>
+        
+        <section class="preparation">
+          <h2>Zubereitung</h2>
+          
+          <div class="preparation-time">
+            <div class="time-item">
+              <img src="../../img/icons/clock-regular.svg" alt="Zubereitungszeit" class="time-icon" />
+              ca. 20 Minuten
+            </div>
+            <div class="time-item">
+              <img src="../../img/icons/clock-regular.svg" alt="Gesamtzeit" class="time-icon" />
+              Gesamtzeit ca. 40 Minuten
+            </div>
+          </div>
+          
+          <div class="preparation-steps">
+            <p>
+              Die roten Chilischoten waschen und mit einem scharfen Messer von der Spitze bis kurz vor dem Stielansatz 4- bis 5-mal einschneiden und entkernen. Anschließend so lange in sehr kaltes Wasser legen, bis sie zu Chiliblüten aufgehen.
+            </p>
+            <p>
+              Das Hühnchenfilet waschen, trocknen und in 3 cm große Würfel schneiden. Die Frühlingszwiebeln putzen und mit dem hellgrünen Lauch in feine Ringe schneiden. Knoblauch und Ingwer schälen und ganz fein hacken. Die getrockneten Chilischoten fein hacken.
+            </p>
+            <p>
+              Das Erdnussöl in einer Pfanne oder in einem Wok erhitzen, Knoblauch, Ingwer und gehackten Chilischoten hinzufügen. Ca. 30 Sekunden unter ständigem Rühren garen. Das Fleisch und die Erdnüsse hinzufügen und ebenfalls unter ständigen Rühren ca. 1 Minute braten. Reiswein, Sojasauce, Zucker, Apfelessig und eine Prise Salz dazugeben und aufkochen lassen. 3 Minuten garen, Die Frühlingszwiebeln hinzufügen und noch einmal aufkochen lassen. Das Sesamöl unterrühren, das Gericht erneut abschmecken und sofort servieren.
+            </p>
+            <p>
+              Jede Portion mit 1 Chiliblüte garnieren.
+            </p>
+            <p>
+              Dazu passt Reis.
+            </p>
+          </div>
+        </section>
+        
+        <section class="recipe-author">
+          <h2>Rezept erstellt von</h2>
+          <div class="author-info">
+            <img src="../../img/phil_img.jpg" alt="Profilbild" class="author-avatar" />
+            <div class="author-name">Phillip</div>
+          </div>
+        </section>
+      </div>
+    </main>
+    
+    <!-- Footer-Bereich mit Scroll-to-Top Funktionalität -->
+    <footer>
+      <div class="footer">
+        <div class="footer_logo">
+          <a href="#" class="scroll-to-top">
+            <img src="../../img/logo_small_white.png" alt="Kochwelt" />
+            <div class="Kochwelt_h3_footer_control">
+              <h3>Kochwelt</h3>
+            </div>
+          </a>
+        </div>
+        <div class="social_logos">
+          <a href="https://www.facebook.com" target="_blank" rel="noopener">
+            <img class="social" src="../../img/Facebook.png" alt="Facebook" />
+          </a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener">
+            <img class="social" src="../../img/ins.png" alt="Instagram" />
+          </a>
+          <a href="https://x.com/" target="_blank" rel="noopener">
+            <img class="social" src="../../img/twitter.png" alt="Twitter" />
+          </a>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- JavaScript für die Zutatenkalkulation -->
+    <!-- <script src="../../js/recipe-calculator.js"></script> -->
+    
+    <!-- JavaScript für Header-Menü -->
+    <script src="../../js/header.js"></script>
+    
+    <!-- JavaScript für Footer Scroll-to-Top -->
+    <script src="../../js/footer.js"></script>
+  </body>
+</html>

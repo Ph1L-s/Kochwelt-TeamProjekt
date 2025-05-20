@@ -1,82 +1,380 @@
-/* header.css - Korrigierte Header-Styles */
+/* header.css - header-stylesheet  */
 header {
-    margin: 0;
-    padding: 0;
-    position: relative;  
+    margin          : 0;
+    padding         : 0;
+    width           : 100%;
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    background-color: white;
+    z-index         : 1000;
+    display         : flex;
+    justify-content : center;
+    border-bottom   : 1px solid #e0e0e0;
+    box-shadow      : 0 2px 5px rgba(0, 0, 0, 0.1);
+    height          : 95px;
 }
 
 .header-control {
-  padding: 10px 10px 10px 10px;
-  box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.1);
-  position: relative;
+    padding  : 0 160px;
+    position : relative;
+    width    : 100%;
+    max-width: 1920px;
+    margin   : 0 auto;
+    height   : 100%;
 }
 
 .header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  top: 14px;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    width          : 100%;
+    height         : 100%;
 }
 
+.Kochwelt_icon a {
+    display        : flex;
+    align-items    : center;
+    text-decoration: none;
+    height         : 100%;
+}
 
 .Kochwelt_icon img {
-    bottom: 8px;
-    height: 75px; 
+    height    : 85px;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
+.Kochwelt_icon img:hover {
+    transform: scale(1.05);
+}
+
+.Kochwelt_icon {
+    display    : flex;
+    align-items: center;
+    height     : 100%;
+}
+
+.Kochwelt_h3_header_control h3 {
+    color      : rgb(0, 0, 0);
+    margin-left: 10px;
+    font-weight: 300;
+    font-size  : 40px;
+    font-family: Raleway;
+    transition : transform 0.3s ease, color 0.3s ease;
+}
+
+.Kochwelt_icon:hover .Kochwelt_h3_header_control h3 {
+    transform: scale(1.05);
+    color    : #00ff00;
+}
+
+
+/* Standard-Navbar für Desktop mit beweglichem und fixem Unterstrich */
 .navbar {
-  position: relative;
-  margin-top: 45px;
+    display       : flex;
+    align-items   : flex-end;
+    height        : 100%;
+    padding-bottom: 0;
+    position      : relative;
+    /* Wichtig für die Positionierung der Unterstriche */
 }
 
+/* Navigationselemente */
 .navbar a {
-  text-decoration: none;
-  color: black;
-  padding-right: 24px;
-  font-size: 24px;
-  font-weight: 500;
-  margin-bottom: 0;
+    text-decoration: none;
+    color          : black;
+    padding        : 0 24px;
+    font-size      : 24px;
+    font-weight    : 500;
+    transition     : color 0.3s ease, transform 0.3s ease;
+    display        : flex;
+    align-items    : center;
+    height         : 60%;
+    position       : relative;
+    /* Für den festen Unterstrich bei aktiven Links */
+    margin-bottom  : 1px;
 }
 
 .navbar a#nopadding {
-  padding: 0;
+    padding-right: 0;
 }
 
+/* Hover-Verhalten */
 .navbar a:hover {
-  color: green;
-  text-decoration: underline;
-  text-underline-offset: 10px;
-  text-decoration-thickness: 5px;
+    color    : green;
+    transform: scale(1.05);
 }
 
-.Kochwelt_icon img {
-    height: 95px; 
+/* Aktive Links */
+.navbar a.active,
+.navbar a#start {
+    color: green;
+}
+
+/* Fester grüner Unterstrich für aktiven Menüpunkt */
+.navbar a.active::after,
+.navbar a#start::after {
+    content         : '';
+    position        : absolute;
+    bottom          : -2px;
+    /* Exakt auf der Grenzlinie */
+    left            : 0;
+    width           : 100%;
+    height          : 3px;
+    background-color: green;
+    transition      : opacity 0.3s ease;
+}
+
+/* Dynamischer Unterstrich für Hover-Effekt */
+.navbar .hover-underline {
+    position        : absolute;
+    bottom          : -1px;
+    /* Exakt auf der Grenzlinie */
+    height          : 3px;
+    background-color: green;
+    transition      : all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    /* Weicher Übergang */
+    opacity         : 0;
+    /* Standardmäßig unsichtbar */
+    pointer-events  : none;
+    /* Damit der Unterstrich nicht mit Maus-Events interferiert */
+}
+
+/* Wichtig: Wenn die Maus über der Navbar ist, den festen Unterstrich ausblenden */
+.navbar:hover a.active::after,
+.navbar:hover a#start::after {
+    opacity: 0 !important;
+    /* Überschreibt andere Stile */
+}
+
+/* Kompaktes Menü für kleinere Bildschirme */
+.menu-container {
+    display        : none;
+    align-items    : flex-end;
+    justify-content: flex-end;
+    height         : 100%;
+    position       : relative;
+    padding-left   : 40px;
+    padding-bottom : 20px;
+}
+
+.menu-toggle {
+    background: none;
+    border    : none;
+    cursor    : pointer;
+    width     : 35px;
+    height    : 35px;
+    position  : relative;
+    padding   : 0;
+    padding   : 10px;
+    margin    : -10px;
+    z-index   : 10;
+}
+
+.menu-icon {
+    display         : block;
+    position        : absolute;
+    width           : 25px;
+    height          : 2px;
+    background-color: #333;
+    top             : 50%;
+    left            : 50%;
+    transform       : translate(-50%, -50%);
+    transition      : all 0.3s ease;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+    content         : '';
+    position        : absolute;
+    width           : 25px;
+    height          : 2px;
+    background-color: #333;
+    left            : 0;
+    transition      : all 0.3s ease;
+}
+
+.menu-icon::before {
+    top: -8px;
+}
+
+.menu-icon::after {
+    top: 8px;
+}
+
+/* Animation für aktives Menü-Icon */
+.menu-toggle.active .menu-icon {
+    background-color: transparent;
+}
+
+.menu-toggle.active .menu-icon::before {
+    transform: rotate(45deg);
+    top      : 0;
+}
+
+.menu-toggle.active .menu-icon::after {
+    transform: rotate(-45deg);
+    top      : 0;
+}
+
+.compact-navbar {
+    position        : absolute;
+    top             : 100%;
+    right           : 0;
+    background-color: white;
+    border-radius   : 0 0 8px 8px;
+    box-shadow      : 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding         : 5px 0;
+    z-index         : 1000;
+    width           : 200px;
+    opacity         : 0;
+    transform       : translateY(-10px);
+    transition      : opacity 0.3s ease, transform 0.3s ease;
+    pointer-events  : none;
+}
+
+.compact-navbar.active,
+.menu-container:hover .compact-navbar {
+    opacity       : 1;
+    transform     : translateY(0);
+    pointer-events: auto;
+}
+
+.compact-navbar::before {
+    content         : '';
+    position        : absolute;
+    top             : -20px;
+    left            : -40px;
+    right           : -20px;
+    height          : 20px;
+    background-color: transparent;
+}
+
+.compact-navbar a {
+    display        : block;
+    padding        : 12px 15px;
+    text-decoration: none;
+    color          : black;
+    font-size      : 16px;
+    transition     : all 0.3s ease;
+}
+
+.compact-navbar a:hover {
+    background-color: rgba(0, 128, 0, 0.1);
+    color           : green;
+    text-decoration : none;
+    transform       : scale(1.05);
+    padding-left    : 20px;
+}
+
+/* Platz für den fixierten Header im Body erstellen */
+body {
+    padding-top: 95px;
+    margin     : 0;
 }
 
 /* Responsive Anpassungen */
+@media (max-width: 1280px) {
+    .navbar {
+        display: none;
+    }
+
+    .menu-container {
+        display: flex;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header-control {
+        padding: 0 80px;
+    }
+
+    .navbar a {
+        font-size: 20px;
+    }
+
+    .Kochwelt_icon img {
+        height: 70px;
+    }
+}
+
 @media (max-width: 1000px) {
-  .header-control {
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .navbar {
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 16px;
-  }
-  
-  .ingredients-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
+    .header-control {
+        padding: 0 40px;
+    }
 
-  .navbar a {
-    font-size: 16px;
-  }
+    .header {
+        height: 75px;
+    }
 
-  .Kochwelt_icon img {
-    height: 56px;
-  }
+    header {
+        height: 75px;
+    }
+
+    .Kochwelt_h3_header_control h3 {
+        font-size: 32px;
+    }
+
+    .Kochwelt_icon img {
+        height: 56px;
+    }
+
+    body {
+        padding-top: 75px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+        padding  : 0 15px;
+    }
+
+    .navbar a.active::after,
+    .navbar a#start::after {
+        bottom: -16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Kochwelt_h3_header_control h3 {
+        display: none;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .header-control {
+        padding: 0 20px;
+    }
+
+    .compact-navbar {
+        width: 180px;
+    }
+
+    .compact-navbar a {
+        font-size: 16px;
+        padding  : 10px 15px;
+    }
+
+    .Kochwelt_icon img {
+        height: 45px;
+    }
+}
+
+@media (max-width: 320px) {
+    .header-control {
+        padding: 0 15px;
+    }
+
+    .Kochwelt_icon img {
+        height: 40px;
+    }
+
+    .compact-navbar {
+        width: 160px;
+    }
+
+    .compact-navbar a {
+        font-size: 14px;
+        padding  : 8px 12px;
+    }
 }

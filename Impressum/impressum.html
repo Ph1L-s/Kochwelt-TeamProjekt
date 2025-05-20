@@ -1,92 +1,127 @@
 <!DOCTYPE html>
 <html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kochwelt - Hauptinhalt</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kochwelt - Hauptinhalt</title>
+    <!-- Header-CSS im Head-Bereich -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/header.css" />
+    <link rel="stylesheet" type="text/css" href="../css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="./impressum.css" />
 
-  <!-- Alle benötigten Styles einbinden -->
-  <link rel="stylesheet" type="text/css" href="../css/style.css" />
-  <link rel="stylesheet" type="text/css" href="../css/header.css" />
-  <link rel="stylesheet" type="text/css" href="../css/main.css" />
-  <link rel="stylesheet" type="text/css" href="../css/footer.css" />
-  <link rel="stylesheet" type="text/css" href="./impressum.css" />
+    <!-- Schriftarten -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <!-- Schriftarten -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-</head>
+  <body>
+    <!-- Header-Bereich -->
+    <header>
+      <div class="header-control">
+        <div class="header">
+          <div class="Kochwelt_icon">
+            <a href="../index.html">
+              <img src="../img/logo_small.png" alt="Startseite" />
+              <div class="Kochwelt_h3_header_control">
+                <h3>Kochwelt</h3>
+              </div>
+            </a>
+          </div>
+          <div class="navbar">
+            <a href="../components/main.html">Start</a>
+            <a href="../recips/html/falk_recipe.html">Rezept des Tages</a>
+            <a href="../kontakt.html">Kontakt</a>
+            <a id="nopadding" href="./impressum.html" class="active"
+              >Impressum</a
+            >
+          </div>
 
-<body>
-  <!-- Header-Bereich -->
-  <header>
-    <div class="header-control">
-      <div class="header">
-        <div class="Kochwelt_icon">
-          <a href="./main.html">
-            <img src="../img/logo.png" alt="Startseite" />
-          </a>
-        </div>
-        <div class="navbar">
-          <a id="start" href="../components/main.html">Start</a>
-          <a href="../rezepte.html">Rezept des Tages</a>
-          <a href="../kontakt.html">Kontakt</a>
-          <a id="nopadding" href="../Impressum/impressum.html">Impressum</a>
+          <!-- Kompaktes Menü für Bildschirme unter 1280px -->
+          <div class="menu-container">
+            <button class="menu-toggle" aria-label="Menü öffnen">
+              <span class="menu-icon"></span>
+            </button>
+            <div class="compact-navbar">
+              <a href="../components/main.html">Start</a>
+              <a href="../recips/html/falk_recipe.html">Rezept des Tages</a>
+              <a href="../kontakt.html">Kontakt</a>
+              <a href="./impressum.html">Impressum</a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <!-- Hauptinhalt -->
+    <!-- Hauptinhalt -->
 
-  <div class="control">
-    <div class="impressum-cnt">
-      <h1>Impressum</h1>
+    <div class="control">
+      <div class="impressum-cnt">
+        <h1>Impressum</h1>
 
-      <div class="impressum-txt">
-        <h2>Angaben gemäß § 5 TMG</h2>
+        <div class="impressum-txt">
+          <h2>Angaben gemäß § 5 TMG</h2>
           <h3>Falko, Phillip, Chris</h3>
           <p>
-          Musterstraße 1<br>
-          12345 Musterstadt<br>
-          Deutschland</p>
-      </div>
+            Musterstraße 1<br />
+            12345 Musterstadt<br />
+            Deutschland
+          </p>
+        </div>
 
-      <div class="impressum-txt">
-        <h2>Kontakt</h2>
-        <p>Telefon: +49 (0)123 456789<br>
-          E-Mail: info@example.com</p>
-      </div>
+        <div class="impressum-txt">
+          <h2>Kontakt</h2>
+          <p>
+            Telefon: +49 (0)123 456789<br />
+            E-Mail: info@example.com
+          </p>
+        </div>
 
-      <div class="impressum-txt">
-        <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
-        <p>Max Mustermann<br>
-          Musterstraße 1<br>
-          12345 Musterstadt</p>
-      </div>
+        <div class="impressum-txt">
+          <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
+          <p>
+            Max Mustermann<br />
+            Musterstraße 1<br />
+            12345 Musterstadt
+          </p>
+        </div>
 
-      <div class="impressum-txt">
-        <h2>Umsatzsteuer-ID</h2>
-        <p>Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz:<br>
-          DE123456789</p>
-      </div>
+        <div class="impressum-txt">
+          <h2>Umsatzsteuer-ID</h2>
+          <p>
+            Umsatzsteuer-Identifikationsnummer gemäß § 27a
+            Umsatzsteuergesetz:<br />
+            DE123456789
+          </p>
+        </div>
 
-      <div class="impressum-txt">
-        <h2>Haftungsausschluss</h2>
-        <p>Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die <br> Inhalte externer Links.
-          Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber <br> verantwortlich.</p>
+        <div class="impressum-txt">
+          <h2>Haftungsausschluss</h2>
+          <p>
+            Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine
+            Haftung für die <br />
+            Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind
+            ausschließlich deren Betreiber <br />
+            verantwortlich.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
     <!-- Footer-Bereich -->
     <footer>
       <div class="footer">
         <div class="footer_logo">
-          <a href="./footer.html">
-            <img src="../img/logo_small_white.png" alt=" Kochwelt Startseiten verlinkung" />
+          <a href="#" class="scroll-to-top">
+            <img
+              src="../img/logo_small_white.png"
+              alt="Kochwelt Startseiten verlinkung"
+            />
             <div class="Kochwelt_h3_footer_control">
               <h3>Kochwelt</h3>
             </div>
@@ -105,6 +140,11 @@
         </div>
       </div>
     </footer>
-</body>
 
+    <!-- JavaScript für Header-Menü -->
+    <script src="../js/header.js"></script>
+
+    <!-- JavaScript für Footer Scroll-to-Top -->
+    <script src="../js/footer.js"></script>
+  </body>
 </html>
