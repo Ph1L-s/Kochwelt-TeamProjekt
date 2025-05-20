@@ -139,4 +139,34 @@ body {
   object-fit: cover; 
 }
 
+/* responsive anpassung */
+@media(max-width: 900px) {
+  .croissant_control{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lust_control{
+    flex-direction: column;
+  }
+
+  .lust_control img {
+    margin-top: 32px;
+  }
+
+  .lust_auf_was_neues h2 {
+    margin-bottom: 0;
+  }
+
+  .recipe_description {
+    align-items: center;
+    padding-top: 16px;
+  }
+
+  .recipe{
+    align-items: center;
+  }
+
+}
+
 
