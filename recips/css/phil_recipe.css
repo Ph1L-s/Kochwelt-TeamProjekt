@@ -1,5 +1,11 @@
 /* phil_recipe.css - Überarbeitete Styles für die Rezeptseite - angepasst an das Mockup */
 
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
 /* Grundlegendes Layout */
 .recipe-container {
   max-width: 900px;
@@ -25,19 +31,16 @@ h2 {
 
 /* Banner-Bild */
 .recipe-banner {
-  width: 100%;
   height: auto;
   overflow: hidden;
-  border-radius: 0;
+  border-radius: 12px;
   margin-bottom: 20px;
 }
 
 .recipe-banner img {
   width: 100%;
-  height: auto;
-  display: block;
   object-fit: cover;
-  max-height: 400px;
+  max-height: 250px;
 }
 
 /* Meta-Informationen */
@@ -51,9 +54,10 @@ h2 {
 .meta-item {
   display: flex;
   align-items: center;
-  font-size: 16px;
+  font-size: 20px;
   color: #666666;
 }
+
 
 .meta-icon {
   width: 20px;
@@ -69,6 +73,7 @@ h2 {
 .ingredients-header {
   display: flex;
   margin-bottom: 15px;
+  gap: 12px;
 }
 
 .ingredients-title {
@@ -120,7 +125,7 @@ h2 {
 }
 
 .ingredients-table tr:nth-child(odd) td {
-  background-color: #f9f9f9;
+  background-color: rgb(0, 0, 0, 0.08);
   border-radius: 5px;
   border: none;
 }
@@ -131,7 +136,7 @@ h2 {
 
 .ingredients-table td {
   padding: 12px 15px;
-  color: #333;
+  color: #333333;
 }
 
 /* Zubereitungs-Sektion */
@@ -148,9 +153,9 @@ h2 {
 .time-item {
   display: flex;
   align-items: center;
-  font-size: 16px;
-  color: #666;
-  background-color: #f9f9f9;
+  font-size: 20px;
+  color: #666666;
+  background-color: rgb(0, 0, 0, 0.08);
   padding: 8px 15px;
   border-radius: 5px;
 }
@@ -163,7 +168,7 @@ h2 {
 
 .preparation-steps {
   line-height: 1.6;
-  color: #333;
+  color: #333333;
 }
 
 .preparation-steps p {
@@ -174,7 +179,7 @@ h2 {
 .recipe-author {
   margin-top: 40px;
   padding-top: 20px;
-  border-top: 1px solid #f9f9f9;
+  border-top: 1px rgb(0, 0, 0, 0.08);
 }
 
 .author-info {
@@ -188,13 +193,13 @@ h2 {
   height: 60px;
   border-radius: 50%;
   object-fit: cover;
-  background-color: #f9f9f9;
+  background-color: rgb(0, 0, 0, 0.08);
 }
 
 .author-name {
   font-size: 18px;
   font-weight: 500;
-  color: #333;
+  color: #333333;
 }
 
 /* Responsive Anpassungen */
