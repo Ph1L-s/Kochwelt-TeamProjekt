@@ -73,7 +73,7 @@ h2 {
 .ingredients-header {
   display: flex;
   margin-bottom: 15px;
-  gap: 12px;
+  gap: 15px;
 }
 
 .ingredients-title {
@@ -99,7 +99,8 @@ h2 {
   text-align: center;
   padding: 8px;
   border: 1px solid #dddddd;
-  border-radius: 0;
+  border-radius: 5px 0 0 5px; /* Nur links abgerundet */
+  border-right: none; /* Keine Border zwischen Eingabefeld und Button */
 }
 
 .portions-button {
@@ -108,13 +109,15 @@ h2 {
   border: none;
   padding: 10px 16px;
   height: 38px;
-  border-radius: 0;
+  border-radius: 0 5px 5px 0; 
   cursor: pointer;
   font-weight: 500;
 }
 
-.portions-button:hover {
-  background-color: #006400;
+/* Äußerer Container für korrektes Alignment */
+.portions-selector {
+  display: flex;
+  align-items: center;
 }
 
 /* Zutaten-Tabelle statt Liste */
@@ -202,25 +205,3 @@ h2 {
   color: #333333;
 }
 
-/* Responsive Anpassungen */
-@media (max-width: 768px) {
-  .recipe-meta {
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .preparation-time {
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .ingredients-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-  
-  .ingredients-title {
-    margin-bottom: 10px;
-  }
-}
