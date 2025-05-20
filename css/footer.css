@@ -12,9 +12,11 @@ body {
 
 .footer_logo img {
   height: 95px;
+  filter: invert();
 }
 
 .social_logos img {
   width: 64px;
   padding-left: 24px;
+
 }

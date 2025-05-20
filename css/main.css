@@ -140,7 +140,7 @@ body {
 }
 
 /* responsive anpassung */
-@media(max-width: 900px) {
+@media(max-width: 1000px) {
   .croissant_control{
     flex-direction: column;
     align-items: center;
@@ -148,6 +148,7 @@ body {
 
   .lust_control{
     flex-direction: column;
+    padding-top: 0;
   }
 
   .lust_control img {
