@@ -3,39 +3,7 @@ body {
     margin: 0;
     font-family: Raleway;
 }
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 160px;
-    padding-right:  160px;
-    padding-top: 32px;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
-}
-.navbar {
-    position: absolute;
-    right: 160px;
-    top: 93px;
-}
-.navbar a {
-    text-decoration: none;
-    color: black;
-    padding-right: 24px;
-    font-size: 24px;
-    font-weight: 500;
-}
-.navbar a#nopadding {
-    padding: 0;
-}
-.navbar a:hover {
-    color: green;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    text-decoration-thickness: 5px
-}
-.Kochwelt_icon img {
-    height: 95px; 
-}
+
 
 
 /* REZEPT*/
@@ -303,18 +271,3 @@ p.slogan {
     padding-left: px;
 }
 
-.footer {
-    padding-left: 160px;
-    padding-right: 160px;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.social_logos img {
-    width: 64px;
-    padding-left: 24px;
-}
-.social_logos a {
-    text-decoration: none;
-}
