@@ -3,6 +3,42 @@ body {
     margin: 0;
     font-family: Raleway;
 }
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 160px;
+    padding-right:  160px;
+    padding-top: 32px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+.navbar {
+    position: absolute;
+    right: 160px;
+    top: 93px;
+}
+.navbar a {
+    text-decoration: none;
+    color: black;
+    padding-right: 24px;
+    font-size: 24px;
+    font-weight: 500;
+}
+.navbar a#nopadding {
+    padding: 0;
+}
+.navbar a:hover {
+    color: green;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px
+}
+.Kochwelt_icon img {
+    height: 95px; 
+}
+
+
+/* REZEPT*/
 .mein-rezept h1 {
     padding-top: 56px;
     padding-left: 160px;
@@ -54,6 +90,7 @@ body {
     padding-top: 4px;
     padding-bottom: 4px;
     border-radius: 8px;
+    align-items: center;
 }
 
 .level {
@@ -67,6 +104,7 @@ body {
     padding-bottom: 4px;
     padding-bottom: 4px;
     border-radius: 8px;
+    align-items: center;
 }
 
 .date {
@@ -79,6 +117,11 @@ body {
     padding-top: 4px;
     padding-bottom: 4px;
     border-radius: 8px;
+    align-items: center;
+}
+
+.tld-style {
+    margin: 4px;
 }
 
 .time img {
@@ -194,6 +237,7 @@ h2 {
     justify-content: center;
     padding-top: 4px;
     padding-bottom: 4px;
+    align-items: center;
 }
 
 .time-zubereitung2 {
@@ -206,6 +250,11 @@ h2 {
     justify-content: center;
     padding-top: 4px;
     padding-bottom: 4px;
+    align-items: center;
+}
+
+.tz-style{
+    margin: 4px;
 }
 
 .time-zubereitung img {
@@ -252,4 +301,20 @@ p.slogan {
     font-size: 16px;
     padding-top: 8px;
     padding-left: px;
+}
+
+.footer {
+    padding-left: 160px;
+    padding-right: 160px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social_logos img {
+    width: 64px;
+    padding-left: 24px;
+}
+.social_logos a {
+    text-decoration: none;
 }
