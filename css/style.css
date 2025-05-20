@@ -5,10 +5,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  position: relative;
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 h2 {
