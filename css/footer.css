@@ -1,171 +1,201 @@
 /* footer.css - footer-stylesheet */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /* Dies stellt sicher, dass der Hauptinhalt den verfügbaren Platz einnimmt */
+}
+
 footer {
-    margin: 0;
-    padding: 0;
-    width: 100%;
+  width: 100%;
+  margin-top: auto; /* Drückt den Footer nach unten, wenn genug Inhalt vorhanden ist */
 }
 
 .footer {
-    padding: 32px 160px;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1920px;
-    margin: 0 auto;
+  padding: 32px 160px;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1920px;
+  margin: 0 auto;
+  /* Position fixed wurde entfernt und durch das flex-Layout ersetzt */
+}
+
+/* Bei kleiner Bildschirmhöhe oder wenig Inhalt kann auch position: sticky verwendet werden */
+@media (max-height: 600px) {
+  footer {
+    position: sticky;
+    bottom: 0;
+  }
 }
 
 .footer_logo img {
-    height: 70px;
-    transition: transform 0.3s ease;
+  height: 70px;
+  transition: transform 0.3s ease;
 }
 
 .footer_logo img:hover {
-    transform: scale(1.1);
-    filter: brightness(1.2);
+  transform: scale(1.1);
+  filter: brightness(1.2);
 }
 
 .footer_logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-/* Hier ist die Änderung: Cursor auf pointer setzen für bessere UX */
 .footer_logo a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    cursor: pointer; /* Zeigt an, dass es klickbar ist */
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .social_logos {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  object-fit: cover;
 }
 
 .social_logos a {
-    
-    margin-left: 16px;
-    transition: transform 0.3s ease;
+  margin-left: 16px;
+  transition: transform 0.3s ease;
 }
 
 .social_logos a:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .social_logos img {
-    width: 28px;
-    height: 28px;
-    transition: filter 0.3s ease;
+  width: 28px;
+  height: 28px;
+  object-fit: contain; /* Verhindert Verzerrung der Icons */
+  transition: filter 0.3s ease;
 }
 
 .social_logos img:hover {
-    filter: brightness(1.3);
+  filter: brightness(1.3);
 }
 
 .Kochwelt_h3_footer_control h3 {
-    color: white;
-    margin-left: 10px;
-    font-weight: 300;
-    font-size: 40px;
-    font-family: Raleway;
-    transition: transform 0.3s ease, color 0.3s ease;
+  color: white;
+  margin-left: 10px;
+  font-weight: 300;
+  font-size: 40px;
+  font-family: Raleway;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .footer_logo:hover .Kochwelt_h3_footer_control h3 {
-    transform: scale(1.05);
-    color: green;
+  transform: scale(1.05);
+  color: green;
 }
 
 /* Zusätzlicher Stil für Scroll nach oben Button */
 .scroll-to-top {
-    cursor: pointer;
-    transition: all 0.3s ease;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .scroll-to-top:hover {
-    transform: translateY(-3px); /* Leichte Aufwärtsbewegung beim Hover */
+  transform: translateY(-3px);
 }
 
 /* Responsive Anpassungen */
 @media (max-width: 1200px) {
-    .footer {
-        padding: 32px 80px;
-    }
+  .footer {
+    padding: 32px 80px;
+  }
 }
 
 @media (max-width: 1000px) {
-    .footer {
-        padding: 32px 40px;
-    }
-    
-    .Kochwelt_h3_footer_control h3 {
-        font-size: 32px;
-    }
-    
-    .footer_logo img {
-        height: 60px;
-    }
+  .footer {
+    padding: 32px 40px;
+  }
+  
+  .Kochwelt_h3_footer_control h3 {
+    font-size: 32px;
+  }
+  
+  .footer_logo img {
+    height: 60px;
+  }
 }
 
 @media (max-width: 768px) {
-    .Kochwelt_h3_footer_control h3 {
-        display: none;
-    }
-    
-    .footer {
-        padding: 25px 40px;
-    }
-    
-    .footer_logo img {
-        height: 50px;
-    }
-    
-    .social_logos {
-        gap: 12px;
-    }
-    
-    .social_logos a {
-        margin-left: 0;
-    }
+  .Kochwelt_h3_footer_control h3 {
+    display: none;
+  }
+  
+  .footer {
+    padding: 25px 40px;
+  }
+  
+  .footer_logo img {
+    height: 50px;
+  }
+  
+  .social_logos {
+    gap: 12px;
+  }
+  
+  .social_logos a {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 480px) {
-    .footer {
-        padding: 20px 20px;
-    }
-    
-    .footer_logo img {
-        height: 45px;
-    }
-    
-    .social_logos {
-        gap: 10px;
-    }
-    
-    .social_logos img {
-        width: 24px;
-        height: 24px;
-    }
+  .footer {
+    padding: 20px 20px;
+  }
+  
+  .footer_logo img {
+    height: 45px;
+  }
+  
+  .social_logos {
+    gap: 10px;
+  }
+  
+  .social_logos img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
 }
 
 @media (max-width: 320px) {
-    .footer {
-        padding: 15px 15px;
-    }
-    
-    .footer_logo img {
-        height: 40px;
-    }
-    
-    .social_logos {
-        gap: 8px;
-    }
-    
-    .social_logos img {
-        width: 22px;
-        height: 22px;
-    }
+  .footer {
+    padding: 15px 15px;
+  }
+  
+  .footer_logo img {
+    height: 40px;
+  }
+  
+  .social_logos {
+    gap: 8px;
+  }
+  
+  .social_logos img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+  }
 }
