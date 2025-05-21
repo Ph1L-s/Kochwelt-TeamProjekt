@@ -5,35 +5,25 @@
   padding: 0;
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-main {
-  flex: 1; /* Dies stellt sicher, dass der Hauptinhalt den verfügbaren Platz einnimmt */
-}
-
 footer {
   width: 100%;
-  margin-top: auto; /* Drückt den Footer nach unten, wenn genug Inhalt vorhanden ist */
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-top: auto;
 }
 
 .footer {
+  max-width: 1920px;
+  margin: 0 auto;
   padding: 32px 160px;
-  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1920px;
-  margin: 0 auto;
-  /* Position fixed wurde entfernt und durch das flex-Layout ersetzt */
 }
 
 /* Bei kleiner Bildschirmhöhe oder wenig Inhalt kann auch position: sticky verwendet werden */
