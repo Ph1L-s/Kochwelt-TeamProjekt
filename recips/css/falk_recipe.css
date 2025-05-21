@@ -129,7 +129,12 @@ hr {
     font-size: 32px;
 }
 /*Footer*/
-
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
 
 @media (max-width: 1150px) {
 

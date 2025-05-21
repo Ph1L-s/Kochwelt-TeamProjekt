@@ -76,7 +76,7 @@ footer {
 
 .footer_logo:hover .Kochwelt_h3_footer_control h3 {
     transform: scale(1.05);
-    color: #00ff00;
+    color: green;
 }
 
 /* Zusätzlicher Stil für Scroll nach oben Button */

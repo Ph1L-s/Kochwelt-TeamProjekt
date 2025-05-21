@@ -65,7 +65,7 @@ header {
 
 .Kochwelt_icon:hover .Kochwelt_h3_header_control h3 {
     transform: scale(1.05);
-    color    : #00ff00;
+    color    : green;
 }
 
 
