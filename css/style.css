@@ -32,10 +32,11 @@ h2 {
 /* Allgemeine Container-Klasse, die in verschiedenen Teilen der Website verwendet werden kann */
 .container {
   max-width: 1920px;
-  margin   : 0 auto;
-  width    : 100%;
+  margin: 0 auto;
 }
-
+.bg_control {
+  width: 100%;
+}
 
 /* Responsive Anpassungen */
 @media (max-width: 1200px) {

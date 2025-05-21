@@ -20,10 +20,7 @@
 */
 
 
-main {
-  max-width: 1920px;
-  margin: 0 auto;
-}
+
 
 .croissant_control {
   display: flex;
@@ -33,6 +30,7 @@ main {
   height: 250px;
   width: 375px;
   border-radius: 12px;
+  object-fit: cover;
 }
 .recipes {
   width: 100%;
@@ -124,8 +122,8 @@ main {
   align-items: center;
   padding-left: 160px;
   padding-right: 160px;
-  margin-top: 32px;
-  margin-bottom: 96px;
+  padding-top: 32px;
+  padding-bottom: 96px;
 }
 
 .pfanne_wok h2 {
