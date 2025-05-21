@@ -68,13 +68,6 @@
 }
 
 
-.footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
 @media(max-width: 500px) {
     .kontaktformular h2 {
         font-size: 16px;
