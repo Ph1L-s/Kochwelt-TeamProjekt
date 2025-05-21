@@ -66,6 +66,8 @@
 .kontaktformular button:hover {
     background-color: rgb(17, 119, 17);
 }
+
+
 .footer {
     position: fixed;
     bottom: 0;
@@ -79,7 +81,5 @@
     }
     .kontaktformular input{
         padding: 20px;
-    }
-
-    
+    }    
 }
